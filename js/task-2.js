@@ -1,9 +1,9 @@
-function getUsersWithFriend(users, friendName) {
+const getUsersWithFriend = (users, friendName) => {
   const friendNameUsers = users.filter((user) =>
     user.friends.includes(friendName)
   );
   return friendNameUsers;
-}
+};
 
 console.log('_____Task2_____');
 const allUsers = [
